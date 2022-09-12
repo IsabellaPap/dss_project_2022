@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+</head>
+<body>
+<div class="card">
+  <form method="POST">
+    <h2>Input Data</h2>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>Your Age</label>
+          <input type="number" name="age" value="{{ request.form['age'] }}">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="gender" name="gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Select which conditions apply or have applied to you in the past year.</label>
+          <input type="checkbox" id="dx1" name="dx1" value="Z333">
+          <label for="dx1"> Pregnancy</label><br>
+          <input type="checkbox" id="dx2" name="dx2" value="Z572">
+          <label for="dx2"> Occupational exposure to dust</label><br>
+          <input type="checkbox" id="dx3" name="dx3" value="Z48813">
+          <label for="dx3"> Surgery on the respiratory</label><br>
+          <input type="checkbox" id="dx4" name="dx4" value="Z559">
+          <label for="dx4"> Dyslexia or other learning difficulty</label><br>
+          <input type="checkbox" id="dx5" name="dx5" value="I130">
+          <label for="dx5"> Chronic Kidney Disease</label><br>
+          <input type="checkbox" id="dx6" name="dx6" value="D56">
+          <label for="dx6"> Thalassemia</label><br>
+          <input type="checkbox" id="dx7" name="dx7" value="E66">
+          <label for="dx7"> Obesity</label><br>
+          <input type="checkbox" id="dx8" name="dx8" value="F41">
+          <label for="dx8"> Anxiety</label><br>
+          <input type="checkbox" id="dx9" name="dx9" value="K58">
+          <label for="dx9"> Irritable Bowel Syndrome</label><br>
+          <input type="checkbox" id="dx10" name="dx10" value="L20">
+          <label for="dx10"> Atopic Dermatitis</label><br>
+        </div>
+      </div>
+  
+      <div class="col">
+        <input type="submit" value="Submit">
+      </div>
+    </div>
+  </form>
+  </div>
+</body>
+</html>
