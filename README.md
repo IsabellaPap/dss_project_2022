@@ -13,4 +13,4 @@ Open your browser to the host given in the terminal and add "/form" to it.<br>
 <br>
 Example: http://127.0.0.1:5000/form
 
-
+The csv files (demographics, claims, preditions) will be overwritten when you run the code, but it is important that they **exist in the folder**, as the system will not create them if they are not found.
