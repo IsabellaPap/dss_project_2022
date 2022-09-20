@@ -7,7 +7,7 @@ Before you run the app you need to locate the cv19index pakage files, installed 
 
 To run the app, after installing flask you just need to run the command:<br>
 <br>
-``` flask --app cv19iex_app.py run ```
+``` flask --app cv19index_app.py run ```
 
 Open your browser to the host given in the terminal and add "/form" to it.<br>
 <br>
